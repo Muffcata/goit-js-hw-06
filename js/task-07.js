@@ -1,8 +1,7 @@
 const { log } = console;
 
 const changeSize = document.querySelector("#font-size-control");
-
-changeSize.addEventListener("input", (event) => {
-  const inputValue = document.querySelector("#text");
+const inputValue = document.querySelector("#text");
+changeSize.addEventListener("input", () => {
   inputValue.style.fontSize = `${changeSize.value}px`;
 });

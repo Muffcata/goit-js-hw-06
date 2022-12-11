@@ -5,7 +5,7 @@ const categoryName = numOfCategories.forEach((elem) => {
   console.log(
     "Category:",
     elem.querySelector("h2").textContent,
-    "Elements:",
+    "\nElements:",
     elem.querySelector("ul").childElementCount
   );
 });

@@ -6,7 +6,7 @@ const span = docQ("#name-output");
 
 textInput.addEventListener("input", (event) => {
   span.textContent = event.currentTarget.value;
-  if (textInput.value === "") {
+  if (textInput.value.trim() === "") {
     span.textContent = "Anonymous";
   }
 });
